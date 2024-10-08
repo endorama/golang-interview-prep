@@ -1,6 +1,6 @@
 module github.com/matthewjamesboyle/golang-interview-prep
 
-go 1.20
+go 1.22
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.16.1
