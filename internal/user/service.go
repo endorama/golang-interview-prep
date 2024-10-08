@@ -29,7 +29,6 @@ func (s *service) AddUser(u User) (string, error) {
 	if err != nil {
 		panic(err)
 	}
-	defer db.Close()
 
 	var id string
 	q := "INSERT INTO users (username, password) VALUES ('" + u.Name + "', '" + u.Password + "') RETURNING id"
